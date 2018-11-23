@@ -1,12 +1,17 @@
 <br><br>
-<h1>
-  <span><%= @cocktail.name %></span>
-  <span>
-    <%= link_to link_to new_cocktail_dose_path(@cocktail.id) do %>
-       <i class="fas fa-plus add add-link"></i>
-      <% end %>
-  </span>
-</h1>
+<ul>
+  <li>
+    <h1>
+      <span><%= @cocktail.name %></span>
+      <span>
+        <%= link_to new_cocktail_dose_path(@cocktail.id) do %>
+           <i class="fas fa-plus add add-link"></i>
+          <% end %>
+      </span>
+    </h1>
+  </li>
+</ul>
+
 
 <div class="show-list">
   <ul class="list-group">
@@ -29,10 +34,7 @@
       <p class="bouton">Back</p>
     </span>
   <% end %>
-
-  <%= link_to new_cocktail_dose_path(@cocktail.id), class:'btn btn-style' do%>
-    <span>
-      <p class="bouton">Add a dose</p>
-    </span>
-  <% end %>
 </div>
+
+
+<%= cl_image_tag("v0bfrfrjcjagvz5oo3tw") %>
