@@ -69,8 +69,12 @@ a:hover {
 
 }
 
-.btn-style {
+.bouton {
   box-shadow: none;
   border: none;
-  border-radius: 30px;
+  border-radius: 3px;
+  background: white;
+  // height: 25px;
+  text-align: center;
+  padding: 5px;
 }
