@@ -1,5 +1,12 @@
 <br><br>
-<h1><%= @cocktail.name %></h1>
+<h1>
+  <span><%= @cocktail.name %></span>
+  <span>
+    <%= link_to link_to new_cocktail_dose_path(@cocktail.id) do %>
+       <i class="fas fa-plus add add-link"></i>
+      <% end %>
+  </span>
+</h1>
 
 <div class="show-list">
   <ul class="list-group">
@@ -13,6 +20,7 @@
       </li>
     <% end %>
   </ul>
+
 </div>
 
 <div class="show-btn">
