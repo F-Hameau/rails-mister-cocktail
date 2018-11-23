@@ -1,7 +1,8 @@
 <div class="my-container">
   <div class="my-navbar">
-    <a href="http://localhost:3000/cocktails" class="my-navbar-item my-navbar-link"> <i class="fas fa-glass-martini"></i> </a>
-
-    <a href="http://localhost:3000/cocktails/new" class="my-navbar-item my-navbar-link">Add a Cocktail</a>
+    <%= link_to cocktails_path, class:"my-navbar-item my-navbar-link" do %>
+      <i class="fas fa-glass-martini"></i>
+    <% end %>
+    <%= link_to 'Add a Cocktail', new_cocktail_path, class:"my-navbar-item my-navbar-link" %>
   </div>
 </div>

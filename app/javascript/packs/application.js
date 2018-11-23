@@ -8,5 +8,7 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import { loadDynamicBannerText } from '../components/banner';
+import { initUpdateNavbarOnScroll } from '../components/navbar';
 
 loadDynamicBannerText();
+initUpdateNavbarOnScroll();
