@@ -25,7 +25,11 @@
       </li>
     <% end %>
   </ul>
+</div>
 
+
+<div class="show-img">
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 </div>
 
 <div class="show-btn">
@@ -35,6 +39,3 @@
     </span>
   <% end %>
 </div>
-
-
-<%= cl_image_tag("v0bfrfrjcjagvz5oo3tw") %>
