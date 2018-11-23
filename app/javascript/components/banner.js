@@ -1,6 +1,6 @@
 import Typed from 'typed.js';
 
-const loadDynamicBannerText = () => {
+const bindSweetAlertButtonDemo = () => {
   new Typed('#banner-typed-text', {
     strings: ["All you need is cocktail!", "Drink, drink and drink again"],
     typeSpeed: 130,
@@ -8,4 +8,4 @@ const loadDynamicBannerText = () => {
   });
 };
 
-export { loadDynamicBannerText };
+export { bindSweetAlertButtonDemo };
