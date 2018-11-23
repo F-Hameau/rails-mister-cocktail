@@ -15,7 +15,7 @@
 @import "pages/index";
 
 body {
-  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background.jpg');
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('background2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -77,4 +77,13 @@ a:hover {
   // height: 25px;
   text-align: center;
   padding: 5px;
+}
+
+.show-btn {
+
+}
+
+.show-list {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }

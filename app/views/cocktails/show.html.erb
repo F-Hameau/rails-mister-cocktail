@@ -1,25 +1,30 @@
 <br><br>
 <h1><%= @cocktail.name %></h1>
 
-<ul class="list-group">
-  <% @cocktail.doses.each do |dose| %>
-   <li class='list-group-item list-up'>
-      <%= dose.description %>
-      <%= dose.ingredient.name %>
-      <%= link_to dose_path(dose.id), method: :delete do %>
-        <i class="far fa-trash-alt small"></i>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
-<%= link_to cocktails_path, class:'btn btn-style' do%>
-  <span>
-    <p class="bouton">Back</p>
-  </span>
-<% end %>
+<div class="show-list">
+  <ul class="list-group">
+    <% @cocktail.doses.each do |dose| %>
+     <li class='list-group-item list-up'>
+        <%= dose.description %>
+        <%= dose.ingredient.name %>
+        <%= link_to dose_path(dose.id), method: :delete do %>
+          <i class="far fa-trash-alt small"></i>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
 
-<%= link_to new_cocktail_dose_path(@cocktail.id), class:'btn btn-style' do%>
-  <span>
-    <p class="bouton">Add a dose</p>
-  </span>
-<% end %>
+<div class="show-btn">
+  <%= link_to cocktails_path, class:'btn btn-style' do%>
+    <span>
+      <p class="bouton">Back</p>
+    </span>
+  <% end %>
+
+  <%= link_to new_cocktail_dose_path(@cocktail.id), class:'btn btn-style' do%>
+    <span>
+      <p class="bouton">Add a dose</p>
+    </span>
+  <% end %>
+</div>
